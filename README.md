@@ -1,5 +1,8 @@
 # excel-from-pojos
-This tool converts a list of Plain Old Java Objects (POJOs) to an excel worksheet, containing all the data from the list of objects.
+This tool converts a list of Plain Old Java Objects (POJOs) to an excel worksheet using reflection, containing all the data from the list of objects.
+
+I opted for reflection because it made the solution more generic to many different object types with completely different attributes.
+The idea behind this tool is that it scans the contained class from the list and then for each getter method, it creates a header cell with the attribute name and then using reflection the tool invokes the getter methods from the object to fill the rest of the cells.
 
 Example: 
 
