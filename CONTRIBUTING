@@ -1,0 +1,3 @@
+This tool converts a list of Plain Old Java Objects (POJOs) to an excel worksheet using reflection, containing all the data from the list of objects.
+
+All PR will need to be approved before merged. 
